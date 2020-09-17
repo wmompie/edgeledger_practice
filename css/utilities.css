@@ -22,35 +22,96 @@
   opacity: 0.9;
 }
 
-.btn-primary {
+.btn-primary,
+.bg-primary {
   background: #74b9ff;
   color: #fff;
 }
 
-.btn-secondary {
+.btn-secondary,
+.bg-secondary {
   background: #28a745;
   color: #fff;
 }
 
-.btn-dark {
+.btn-dark,
+.bg-dark {
   background: #333;
   color: #fff;
 }
 
-.btn-light {
+.btn-light,
+.bg-light {
   background: #f4f4f4;
   color: #333;
 }
 
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-outline:hover {
+  background: #74b9ff;
+  opacity: 0.7;
+}
+
 /* Flex Items */
 .flex-items {
-  display: flex;
-  text-align: center;
   align-items: center;
-  justify-content: center;
+  display: flex;
   height: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 .flex-items > div {
   padding: 20px;
+}
+
+/* Flex Columns */
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.flex-columns .column-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
 }
