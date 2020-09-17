@@ -41,3 +41,16 @@
   background: #f4f4f4;
   color: #333;
 }
+
+/* Flex Items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
