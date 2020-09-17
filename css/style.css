@@ -68,3 +68,45 @@ img {
 .navbar .logo {
   font-weight: 400;
 }
+
+/* Header */
+.hero {
+  background: url('../images/home/showcase.jpg') no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+.hero .content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  margin: 20px 0 30px;
+  max-width: 600px;
+}
+
+.hero::before {
+  background: rgba(0, 0, 0, 0.7);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hero * {
+  z-index: 10;
+}
